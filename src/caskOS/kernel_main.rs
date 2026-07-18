@@ -1,7 +1,7 @@
 #[no_mangle]
 pub extern "C" fn main_kernel_function() {
     let vga_mem = 0xB8000 as *mut u8;
-    let message = b"Welcome to RIFT OS";
+    let message = b"Welcome to caskOS (TM)";
 
     for (i, &byte) in message.iter().enumerate() {
         unsafe {
