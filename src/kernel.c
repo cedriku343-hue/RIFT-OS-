@@ -1,4 +1,4 @@
-void main_kernel_function(void) {
+void boot_message(void) {
     volatile char* VGA_MEM = (volatile char*)0xB8000;
     const char* message = "Welcome to RIFT OS";
     
@@ -7,4 +7,5 @@ void main_kernel_function(void) {
         VGA_MEM[i * 2 + 1] = 0x07;
     }
 }
+
 
