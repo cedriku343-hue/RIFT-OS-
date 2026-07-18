@@ -14,13 +14,13 @@ void main_kernel_function(void) {
 }
 
 void sys_exit(void) {
-    
+
 
 
 }
 
 void* syscall_table[] = {
-    [0] = sys_exit
-    [1] = sys_write
-    [2] = sys_read
+    [0] = sys_exit,
+    [1] = sys_write,
+    [2] = sys_read,
 }
